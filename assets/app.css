@@ -40,14 +40,17 @@ body{
     background-color: #EFF1ED;
     margin: 0;
     font-family: 'Segoe UI Regular', sans-serif;
+    position: absolute;
 }
-header{
+.header{
     display: flex;
     background-color: #ffffff;
     height: 54px;
+    width: 100%;
     border-bottom: 1px solid #A5A294;
     justify-content: center;
     align-items: center;
+    position: fixed;
 }
 .search-bar{
     display: flex;
@@ -78,6 +81,52 @@ header{
     display: flex;
     width: 201.9px;
     justify-content: space-between;
-    left: 1213.1px;
+    left: 63.1822916667%;
     top: 13px;
+}
+.container{
+    display: flex;
+    margin: 54px 0 auto;
+    padding-top: 30px;
+    padding-left: 26.354vw;
+    margin-right: 30px;
+    flex-direction: column;
+}
+
+.skill-container {
+    height: 98px;
+    margin-bottom: 24px;
+    border-radius: 3px;
+}
+
+.experience-container{
+    padding-bottom: 80px;
+}
+.experience-header{
+    height: 60px;
+    border-radius: 3px 3px 0 0 ;
+}
+
+.experience-footer {
+    height: 180px;
+    border-radius: 0 0 3px 3px;
+}
+.skill-container,.experience-header,.experience-img,.experience-footer{
+    border: 1px solid #707070;
+    width: 614px;
+    background-color: white;
+}
+
+.experience-img {
+    height: 600px;
+    border-bottom:0px;
+    border-top: 0px;
+}
+.section-container {
+    position: fixed;
+    top: 100px;
+    height: 100px;
+    width: 100px;
+    left: 60.16%;
+    background-color: black;
 }
