@@ -42,7 +42,13 @@ body{
     font-family: 'Segoe UI Regular', sans-serif;
     position: absolute;
 }
+main{
+    display: flex;
+    width: 100vw;
+    /* border: red solid; */
+}
 .header{
+    position: fixed;
     display: flex;
     background-color: #ffffff;
     height: 54px;
@@ -50,7 +56,7 @@ body{
     border-bottom: 1px solid #A5A294;
     justify-content: center;
     align-items: center;
-    position: fixed;
+   
 }
 .search-bar{
     display: flex;
@@ -76,6 +82,12 @@ body{
     width: 22px;
     height: 22px;
 }
+.pp-container2{
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    margin: 5px;
+}
 .nav-icon{
     position: absolute;
     display: flex;
@@ -86,11 +98,11 @@ body{
 }
 .container{
     display: flex;
-    margin: 54px 0 auto;
-    padding-top: 30px;
-    padding-left: 26.354vw;
-    margin-right: 30px;
+    margin: auto;
+
     flex-direction: column;
+
+    /* border: blue solid; */
 }
 
 .skill-container {
@@ -123,10 +135,62 @@ body{
     border-top: 0px;
 }
 .section-container {
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    display: inline-block;
+    width: 272px;
     top: 100px;
-    height: 100px;
-    width: 100px;
-    left: 60.16%;
-    background-color: black;
+    margin-left: 644px;
+
+    /* border: solid yellow; */
+}
+a,a:visited{
+    text-decoration: none;
+}
+.name{
+    color: black;
+    font-size: 14px;
+    display: block;
+    font-family: 'Segoe UI Regular Bold', sans-serif;
+    margin-bottom: 2px;
+}
+.job{
+    display: block;
+    margin: 0;
+    font-size: 12px;
+    color: #849597;
+    font-weight: normal;
+}
+h2{
+    color: #849597;
+    font-weight: normal;
+    /* display: block; */
+}
+.name-job-container{
+    position: relative;
+    top: -60px;
+    left: 70px;
+}
+.interest-title {
+    padding: 0px;
+    font-size: 14px;
+    margin: 0;
+    position: relative;
+    padding-top: 21px;
+    margin-bottom: 21px;
+    top: -43px;
+}
+.interest-pp{
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    width: 32px;
+    margin-bottom: 5px;
+    height: 32px;
+}
+.interest-container {
+    position: relative;
+    top: -43px;
+    display: flex;
+    flex-direction: column;
+
 }
