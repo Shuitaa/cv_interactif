@@ -1,6 +1,10 @@
 "use strict";
 
 $(function(){
+    slider();
+});
+
+function slider(){
     $(".button-next").on("click",function(){
         $(".button-previous").show();
         $(".skill-content").css({"transform":"translateX(-240px)","transition":"transform 0.6s ease"});
@@ -11,5 +15,4 @@ $(function(){
         $(".skill-content").css({"transform":"translateX(0px)","transition":"transform 0.6s ease"})
         $(".button-previous").hide();
     });
-});
-
+}
