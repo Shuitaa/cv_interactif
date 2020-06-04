@@ -5,10 +5,17 @@ $(function () {
         "transform": "translateX(0px)"
     });
     slider();
-    console.log("ça marche")
     $(".circle-skill").each(function () {
         var idSkill = $(this).attr("id");
         $(this).toggleClass("circle-anim-" + idSkill);
+    });
+    $(".experience-icon").on("click",function(){
+        var getid = $(this).attr("id")
+
+
+        $.get("assets/app.php",{ id : getid },function(){
+            console.log("ça marche");
+        });
     });
 
 });

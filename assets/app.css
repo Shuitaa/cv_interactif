@@ -36,6 +36,10 @@
     box-sizing: border-box;
 }
 
+Button:focus {
+    outline: none
+}
+
 body {
     background-color: #EFF1ED;
     margin: 0;
@@ -279,9 +283,9 @@ main {
 }
 
 .experience-footer {
+    max-height: 261px;
     position: relative;
     top: -5px;
-    height: 180px;
     border-radius: 0 0 3px 3px;
 }
 
@@ -295,7 +299,7 @@ main {
 }
 
 .experience-img {
-    height: 600px;
+    height: 614px;
     border-bottom: 0px;
     border-top: 0px
 }
@@ -324,6 +328,73 @@ main {
     position: absolute;
     top: 10px;
     left: 522px;
+}
+
+.experience-icon-container {
+    margin-top: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.experience-icon {
+    background: 0 0;
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+}
+.experience-comment-container {
+    display: flex;
+    margin-top: 4px;
+    padding-left: 24px;
+    font-size: 16px;
+    padding-right: 16px;
+    height: 55px;
+    border-top: 1px solid #707070;
+    align-items: center;
+}
+.experience-comment-text {
+    color: #849597;
+}
+.experience-comment-post {
+    cursor: pointer;
+    color: #276D88;
+    margin-left: 350px;
+}
+.icon-left {
+    margin-left: 405px;
+}
+.like-container {
+    display: flex;
+    padding-left: 24px;
+    padding-right: 16px;
+    margin-bottom: 8px;
+    align-items: center;
+}
+.experience-text-container {
+    padding-left: 24px;
+    padding-right: 16px;
+    margin-bottom: 8px;
+    vertical-align: baseline;
+}
+.experience-text {
+    font-family: 'Segoe UI Regular', sans-serif;
+    line-height: 14px;
+    font-size: 14px;
+}
+.experience-date-container {
+    padding-left: 24px;
+    margin-bottom: 4px; 
+}
+.date-text {
+    color:#849597;
+    font-size: 10px;
+    letter-spacing: .2px;
+}
+.footer-name-text {
+    color: black;
+    font-size: 14px;
+    display: inline;
+    font-family: 'Segoe UI Regular Bold', sans-serif;
 }
 
 .section-container {
@@ -359,7 +430,6 @@ a:visited {
 h2 {
     color: #849597;
     font-weight: normal;
-    flex-direction: row;
 }
 
 .name-job-container {
