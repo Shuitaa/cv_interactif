@@ -9,8 +9,6 @@ if (isset($_GET['id']) AND !empty($_GET['id'])) {
     $check_like = $db -> prepare('SELECT id FROM likes WHERE article_id = ? AND ip_utilisateur = ?');
     $check_like -> execute(array($getid,$getip));
 
-    echo $check_like->rowCount();
-
     if($check_like->rowCount() == 1){
         echo'bjr';
         $del = $db -> prepare('DELETE FROM likes WHERE article_id = ? AND ip_utilisateur = ?');
@@ -20,6 +18,10 @@ if (isset($_GET['id']) AND !empty($_GET['id'])) {
         $ins = $db->prepare('INSERT INTO likes (id_article, ip_utilisateur) VALUES (?, ?)');
         $ins -> execute(array($getid,$getip));
     }
+    $likes = $db -> prepare('SELECT id FROM likes WHERE id_article = ?');
+    $likes->execute(array($getid));
+    $likes = $likes -> rowCount();
     
+    echo json_encode($likes);
 }
 ?>

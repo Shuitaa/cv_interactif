@@ -9,15 +9,17 @@ $(function () {
         var idSkill = $(this).attr("id");
         $(this).toggleClass("circle-anim-" + idSkill);
     });
+
     $(".experience-icon").on("click",function(){
         var getid = $(this).attr("id")
+        $("#like-"+getid).empty();
 
 
-        $.get("assets/app.php",{ id : getid },function(){
-            console.log("ça marche");
+        $.get("assets/app.php",{ id : getid },function(likes){
+            $("#like-"+getid).append(likes+" ");
+            console.log(likes);
         });
     });
-
 });
 
 function slider() {
