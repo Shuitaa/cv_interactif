@@ -6,20 +6,21 @@ if (isset($_GET['id']) AND !empty($_GET['id'])) {
     $getid = (int)  $_GET['id'];
     $getip = $_SERVER['REMOTE_ADDR'];
 
-    $check_like = $db -> prepare('SELECT id FROM likes WHERE article_id = ? AND ip_utilisateur = ?');
+    $check_like = $db -> prepare('SELECT id FROM likes WHERE id_article = ? AND ip_utilisateur = ?');
     $check_like -> execute(array($getid,$getip));
 
+
+
     if($check_like->rowCount() == 1){
-        echo'bjr';
-        $del = $db -> prepare('DELETE FROM likes WHERE article_id = ? AND ip_utilisateur = ?');
+        $del = $db -> prepare('DELETE FROM likes WHERE id_article = ? AND ip_utilisateur = ?');
         $del -> execute(array($getid,$getip));
 
     } else {
         $ins = $db->prepare('INSERT INTO likes (id_article, ip_utilisateur) VALUES (?, ?)');
         $ins -> execute(array($getid,$getip));
     }
-    $likes = $db -> prepare('SELECT id FROM likes WHERE id_article = ?');
-    $likes->execute(array($getid));
+    $likes = $db -> prepare('SELECT id FROM likes WHERE id_article = ? AND ip_utilisateur = ?');
+    $likes->execute(array($getid,$getip));
     $likes = $likes -> rowCount();
     
     echo json_encode($likes);
