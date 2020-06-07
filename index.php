@@ -30,7 +30,7 @@
                 </svg>
             </a>
 
-            <a href="contact/contact.php"><svg fill="#262626" style="position:relative;top:2px"
+            <a href="contact/contact.html"><svg fill="#262626" style="position:relative;top:2px"
                     xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 48 48">
                     <path
                         d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
@@ -99,8 +99,49 @@
             <div class="skill-container">
 
 
-                <div class="button-next"></div>
-                <div class="button-previous"></div>
+                <div class="button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.999"
+                        height="43" viewBox="0 0 42.999 43">
+                        <defs>
+                            <filter id="bouton-next2" x="0" y="0" width="42.999" height="43"
+                                filterUnits="userSpaceOnUse">
+                                <feOffset dy="3" input="SourceAlpha" />
+                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                <feFlood flood-opacity="0.161" />
+                                <feComposite operator="in" in2="blur" />
+                                <feComposite in="SourceGraphic" />
+                            </filter>
+                        </defs>
+                        <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#bouton-next2)">
+                            <path id="bouton-next2-2" data-name="bouton-next2"
+                                d="M258.5,183a12.5,12.5,0,1,1,8.838-3.661A12.418,12.418,0,0,1,258.5,183Zm-1.872-20a1.127,1.127,0,0,0-.8.327,1.121,1.121,0,0,0,0,1.59l5.959,5.954-5.954,5.959a1.123,1.123,0,0,0,0,1.59,1.133,1.133,0,0,0,1.594,0l6.78-6.794a1.121,1.121,0,0,0-.032-1.552l-6.752-6.747A1.125,1.125,0,0,0,256.628,163Z"
+                                transform="translate(-237 -152)" fill="#fff" />
+                        </g>
+                    </svg>
+
+
+                </div>
+                <div class="button-previous">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.999"
+                        height="43" viewBox="0 0 42.999 43">
+                        <defs>
+                            <filter id="bouton-prev2" x="0" y="0" width="42.999" height="43"
+                                filterUnits="userSpaceOnUse">
+                                <feOffset dy="3" input="SourceAlpha" />
+                                <feGaussianBlur stdDeviation="3" result="blur" />
+                                <feFlood flood-opacity="0.161" />
+                                <feComposite operator="in" in2="blur" />
+                                <feComposite in="SourceGraphic" />
+                            </filter>
+                        </defs>
+                        <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#bouton-prev2)">
+                            <path id="bouton-prev2-2" data-name="bouton-prev2"
+                                d="M12.5,0A12.5,12.5,0,0,0,3.661,21.339,12.5,12.5,0,0,0,21.338,3.661,12.417,12.417,0,0,0,12.5,0ZM10.628,20a1.127,1.127,0,0,1-.8-.327,1.121,1.121,0,0,1,0-1.59l5.959-5.954L9.835,6.17a1.123,1.123,0,0,1,0-1.59,1.133,1.133,0,0,1,1.594,0l6.78,6.794a1.121,1.121,0,0,1-.032,1.552l-6.752,6.747A1.125,1.125,0,0,1,10.628,20Z"
+                                transform="translate(34 31) rotate(180)" fill="#fff" />
+                        </g>
+                    </svg>
+
+                </div>
 
 
 
@@ -229,7 +270,7 @@
 
             <?php
             $getip = $_SERVER['REMOTE_ADDR'];
-            $stmt = $db -> prepare('SELECT entreprise_nom, experience_description, experience_date, id  FROM article');
+            $stmt = $db -> prepare('SELECT *  FROM article');
             $stmt -> execute();
 
             while ($data = $stmt -> fetch()){

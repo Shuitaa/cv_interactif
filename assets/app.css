@@ -36,7 +36,7 @@
     box-sizing: border-box;
 }
 
-Button:focus {
+Button:focus,.form-input:focus {
     outline: none
 }
 
@@ -246,28 +246,20 @@ main {
 }
 
 .button-next {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: white;
-    top: 3%;
-    left: 55.73%;
+    position: relative;
+    top: 12px;
+    height: 45px;
+    left: 550px;
     z-index: 100;
     cursor: pointer;
 }
 
 .button-previous {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     display: none;
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    background-color: white;
-    top: 3%;
-    left: 27.34%;
+    position: relative;
+    height: 45px;
+    top: 12px;
+    left: -19px;
     z-index: 100;
     cursor: pointer;
 }
@@ -292,7 +284,7 @@ main {
 .skill-container,
 .experience-header,
 .experience-img,
-.experience-footer {
+.experience-footer,.form-container,.form-input {
     border: 1px solid #dbdbdb;
     width: 614px;
     background-color: white;
@@ -482,4 +474,135 @@ h2 {
     display: inline-block;
     margin-top: 2px;
     font-size: 12px;
+}
+.form-container {
+    border-radius: 3px;
+}
+.form-header {
+    height: 55px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-title {
+    display: inline-block;
+    font-weight: normal;
+    margin: 0;
+    font-size: 2rem;
+}
+.icon-write{
+    position: relative;
+    left: 230px;
+}
+.form-main {
+    height: 614px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.form-footer {
+    height: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-input {
+    display: block;
+    width: 522px;
+    height: 44px;
+    padding: 0px;
+    border-radius: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    padding-left: 11px;
+    padding-right: 8px;
+    font-size: 14px;
+}
+.form-textarea {
+    height: 325px;
+    resize: none;
+    padding-top: 11px;
+}
+.form-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-left: 480px;
+}
+.header-profil {
+    margin-bottom: 44px;
+    display: flex;
+    width: 935px;
+}
+.profil-pp-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-right: 30px;
+}
+.profil-pp-content {
+    width: 150px;
+    height: 150px;
+    margin-left: 77px;
+    margin-right: 77px;
+}
+.profil-pp {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.name-info-me {
+    font-size: 28px;
+    color: #262626;
+    margin-bottom: 20px;
+    display: block;
+    font-family: 'Segoe UI Regular';
+}
+.info-me-content {
+    padding: 0;
+    color: #262626;
+    margin: 0px;
+    list-style: none;
+    font-size: 16px;
+}
+.info-me {
+    margin-left:40px;
+    color: #262626;
+    float:  left;
+    margin-bottom: 20px;
+}
+.info-me:first-child {
+    margin: 0;
+}
+.info-me-job {
+    color: #262626;
+    font-family: 'Segoe UI Regular';
+
+}
+.info-me-text {
+    position: absolute;
+    top: 220px;
+    left: 48.2vw;
+    width: 31.25vw;
+    display: block;
+}
+.border-formation {
+    width: 935px;
+    height: 53px;
+    margin-top: 20px;
+    border-top:1px solid #dbdbdb ;
+}
+.formation-container {
+    display: flex;
+}
+.formation-content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 935px;
 }

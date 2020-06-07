@@ -2,7 +2,7 @@
 
 $(function () {
     $(".skill-content").css({
-        "transform": "translateX(0px)"
+        "transform": "translateX(-42.98px)"
     });
     slider();
     $(".circle-skill").each(function () {
@@ -29,7 +29,7 @@ function slider() {
     $(".button-next").on("click", function () {
         $(".button-previous").show();
         $(".skill-content").css({
-            "transform": "translateX(-456px)",
+            "transform": "translateX(-501px)",
             "transition": "transform 0.6s ease"
         });
         $(".button-next").hide();
@@ -37,7 +37,7 @@ function slider() {
     $(".button-previous").on("click", function () {
         $(".button-next").show();
         $(".skill-content").css({
-            "transform": "translateX(0px)",
+            "transform": "translateX(-42.98px)",
             "transition": "transform 0.6s ease"
         });
         $(".button-previous").hide();
