@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
     <link rel="stylesheet" href="assets/app.css">
-    <?php $db = new PDO ('mysql:host=localhost;dbname=cv_interactif', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));?>
+    <?php $db = new PDO ('mysql:host=sqletud.u-pem.fr;dbname=paverty_db', 'paverty', 'DinoLacambra', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));?>
 </head>
 
 <body>
@@ -79,23 +79,23 @@
                 <div class="interest-container">
                     <div><img src="img/arts-pp.png" alt="" class="interest-pp">
                         <div class="interest-content"><span class="name interest">arts</span>
-                            <span class="interest-subtitle">Dessin,peinture,fusain</span></div>
+                            <span class="interest-subtitle">Dessin, peinture, fusain</span></div>
                     </div>
                     <div><img src="img/jv-pp.png" alt="" class="interest-pp">
                         <div class="interest-content"><span class="name interest">jeux_video</span>
-                            <span class="interest-subtitle">Minecraft,God_of_war,Starcraft 2</span></div>
+                            <span class="interest-subtitle">Minecraft, God_of_war, Starcraft 2</span></div>
                     </div>
                     <div><img src="img/voyages-pp.png" alt="" class="interest-pp">
                         <div class="interest-content"><span class="name interest">voyages</span>
-                            <span class="interest-subtitle">Japon,Finlande,Prague</span></div>
+                            <span class="interest-subtitle">Japon, Finlande, Prague</span></div>
                     </div>
                     <div><img src="img/nourriture-pp.png" alt="" class="interest-pp">
                         <div class="interest-content"><span class="name interest">nourriture</span>
-                            <span class="interest-subtitle">Mexicaine,italienne,japonaise</span></div>
+                            <span class="interest-subtitle">Mexicaine, italienne, japonaise</span></div>
                     </div>
                     <div><img src="img/animjap-pp.png" alt="" class="interest-pp">
                         <div class="interest-content"><span class="name interest">animation_japonaise</span>
-                            <span class="interest-subtitle">Vinland_Saga,hunterXhunter</span></div>
+                            <span class="interest-subtitle">Vinland_Saga, hunterXhunter</span></div>
                     </div>
                 </div>
             </section>
@@ -320,10 +320,10 @@
                                         <path clip-rule="evenodd" d="M47.5 46.1l-2.8-11c1.8-3.3 2.8-7.1 2.8-11.1C47.5 11 37 .5 24 .5S.5 11 .5 24 11 47.5 24 47.5c4 0 7.8-1 11.1-2.8l11 2.8c.8.2 1.6-.6 1.4-1.4zm-3-22.1c0 4-1 7-2.6 10-.2.4-.3.9-.2 1.4l2.1 8.4-8.3-2.1c-.5-.1-1-.1-1.4.2-1.8 1-5.2 2.6-10 2.6-11.4 0-20.6-9.2-20.6-20.5S12.7 3.5 24 3.5 44.5 12.7 44.5 24z" fill-rule="evenodd"></path>
                                     </svg></button>
                             </span>
-                            <span><button class="experience-icon"><svg fill="#262626" xmlns="http://www.w3.org/2000/svg" width="24"
+                            <span><a href="contact/contact.php"><button class="experience-icon"><svg fill="#262626" xmlns="http://www.w3.org/2000/svg" width="24"
                                         height="24" viewBox="0 0 48 48">
                                         <path d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z"></path>
-                                    </svg></button>
+                                    </svg></button></a>
                             </span>
                             <span><button class="experience-icon icon-left"><svg fill="#262626" xmlns="http://www.w3.org/2000/svg"
                                         width="24" height="24" viewBox="0 0 48 48">

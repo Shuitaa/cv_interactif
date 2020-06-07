@@ -1,3 +1,4 @@
+/* récupération de la police d'écriture */
 @font-face {
     font-family: 'Segoe UI Regular';
     font-style: normal;
@@ -35,8 +36,9 @@
 *::after {
     box-sizing: border-box;
 }
-
-Button:focus,.form-input:focus {
+/* on retire le contour noir des boutons au clic */
+Button:focus,
+.form-input:focus {
     outline: none
 }
 
@@ -54,7 +56,7 @@ main {
     width: 100vw;
 
 }
-
+/* en-tête */
 .header {
     position: fixed;
     display: flex;
@@ -109,15 +111,14 @@ main {
     left: 63.1822916667%;
     top: 13px;
 }
-
+/* --------------------------------------- */
 .container {
     display: flex;
     margin: auto;
 
     flex-direction: column;
-
 }
-
+/* compétences */
 .skill-container {
     display: flex;
     padding-left: 20px;
@@ -156,7 +157,7 @@ main {
     stroke-linecap: round;
     transform: translate(1.25px, 1.25px);
 }
-
+/* animation des cercles */
 .circle-anim-xd {
     stroke-dasharray: 182px;
     stroke-dashoffset: calc(182 - (182 * 95) / 100);
@@ -221,7 +222,7 @@ main {
     stroke-dasharray: 182px;
     stroke-dashoffset: calc(182 - (182 * 40) / 100);
 }
-
+/* -------------------------------------------- */
 .skill-pp {
     display: block;
     height: 56px;
@@ -263,7 +264,8 @@ main {
     z-index: 100;
     cursor: pointer;
 }
-
+/* ------------------------------- */
+/* experience */
 .experience-container {
     padding-bottom: 80px;
 }
@@ -280,16 +282,18 @@ main {
     top: -5px;
     border-radius: 0 0 3px 3px;
 }
-
+/* ajout des bordure et du background blanc */
 .skill-container,
 .experience-header,
 .experience-img,
-.experience-footer,.form-container,.form-input {
+.experience-footer,
+.form-container,
+.form-input {
     border: 1px solid #dbdbdb;
     width: 614px;
     background-color: white;
 }
-
+/* ------------------------------- */
 .experience-img {
     height: 614px;
     border-bottom: 0px;
@@ -335,6 +339,7 @@ main {
     padding: 8px;
     cursor: pointer;
 }
+
 .experience-comment-container {
     display: flex;
     margin-top: 4px;
@@ -345,17 +350,21 @@ main {
     border-top: 1px solid #dbdbdb;
     align-items: center;
 }
+
 .experience-comment-text {
     color: #8e8e8e;
 }
+
 .experience-comment-post {
     cursor: pointer;
     color: #276D88;
     margin-left: 350px;
 }
+
 .icon-left {
     margin-left: 405px;
 }
+
 .like-container {
     display: flex;
     padding-left: 24px;
@@ -363,33 +372,39 @@ main {
     margin-bottom: 8px;
     align-items: center;
 }
+
 .experience-text-container {
     padding-left: 24px;
     padding-right: 16px;
     margin-bottom: 8px;
     vertical-align: baseline;
 }
+
 .experience-text {
     font-family: 'Segoe UI Regular', sans-serif;
     line-height: 14px;
     font-size: 14px;
 }
+
 .experience-date-container {
     padding-left: 24px;
-    margin-bottom: 4px; 
+    margin-bottom: 4px;
 }
+
 .date-text {
-    color:#8e8e8e;
+    color: #8e8e8e;
     font-size: 10px;
     letter-spacing: .2px;
 }
+
 .footer-name-text {
     color: #262626;
     font-size: 14px;
     display: inline;
     font-family: 'Segoe UI Regular Bold', sans-serif;
 }
-
+/* ---------------------------- */
+/* centre d'interêts */
 .section-container {
     position: -webkit-sticky;
     position: sticky;
@@ -475,9 +490,12 @@ h2 {
     margin-top: 2px;
     font-size: 12px;
 }
+/* ---------------------------------- */
+/* PAGE FORMULAIRE */
 .form-container {
     border-radius: 3px;
 }
+
 .form-header {
     height: 55px;
     position: relative;
@@ -487,16 +505,19 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
 .form-title {
     display: inline-block;
     font-weight: normal;
     margin: 0;
     font-size: 2rem;
 }
-.icon-write{
+
+.icon-write {
     position: relative;
     left: 230px;
 }
+
 .form-main {
     height: 614px;
     padding-left: 20px;
@@ -504,6 +525,7 @@ h2 {
     border-top: 1px solid #dbdbdb;
     border-bottom: 1px solid #dbdbdb;
 }
+
 .form-footer {
     height: 55px;
     padding-left: 20px;
@@ -512,6 +534,7 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+
 .form-input {
     display: block;
     width: 522px;
@@ -524,27 +547,34 @@ h2 {
     padding-right: 8px;
     font-size: 14px;
 }
+
 .form-textarea {
     height: 325px;
     resize: none;
     padding-top: 11px;
 }
+
 .form-button {
     border: none;
     background-color: transparent;
     cursor: pointer;
     margin-left: 480px;
 }
+/* ----------------------------- */
+/* PAGE PROFIL */
 .header-profil {
     margin-bottom: 44px;
     display: flex;
     width: 935px;
+
 }
+
 .profil-pp-container {
     display: flex;
     margin-right: 77px;
     margin-left: 30px;
 }
+
 .profil-pp-content {
     width: 150px;
     height: 150px;
@@ -552,54 +582,66 @@ h2 {
     margin-right: auto;
 
 }
+
 .profil-pp {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
+
 .name-info-me {
     font-size: 28px;
     color: #262626;
     margin-bottom: 20px;
     display: block;
 }
+
 .info-me-content {
     padding: 0;
     color: #262626;
     margin: 0px;
+    width: 100%;
     list-style: none;
     font-size: 16px;
 }
+.info-me-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .info-me {
-    margin-left:40px;
+    margin-left: 40px;
     color: #262626;
-    float:  left;
+    float: left;
     margin-bottom: 20px;
 }
+
 .info-me:first-child {
     margin: 0;
 }
+
 .info-me-job {
     color: #262626;
+    margin-bottom: 20px;
 }
+
 .info-me-text {
-    position: absolute;
-    top: 220px;
-    left: 38.9%;
-    width: 600px;
-    display: block;
+    width: 100%;
 }
+
 .border-formation {
     width: 935px;
     height: 53px;
     margin-top: 20px;
-    border-top:1px solid #dbdbdb ;
+    border-top: 1px solid #dbdbdb;
 }
+
 .formation-container {
     margin-top: 10px;
     display: flex;
     flex-direction: row;
 }
+
 .formation-content {
     display: flex;
     flex-direction: row;
@@ -607,17 +649,21 @@ h2 {
     margin-right: auto;
     width: 935px;
 }
+
 .formation-img-container {
     margin-left: 28px;
 }
+
 .formation-img {
     width: 293px;
     height: 293px;
 
 }
-.formation-img-container:first-child{
+
+.formation-img-container:first-child {
     margin-left: 0;
 }
+
 .formation-text {
     position: relative;
     top: 10px;
@@ -627,3 +673,4 @@ h2 {
     display: inline-block;
     width: 293px;
 }
+/* ---------------------------------- */

@@ -14,13 +14,14 @@
 
     <?php 
     
-    if(isset($_GET['success'])) {
+    if(isset($_GET['success'])) { //vérification du succés de l'envoi de formulaire
         echo('<script>alert("Message envoyé !")</script>');
     }
     
     ?>
-
+    <!-- en-tête -->
     <header class="header">
+        <!-- bar de recherche -->
         <div class="search-bar">
             <div class="search-content"><svg xmlns="http://www.w3.org/2000/svg" width="9.229" height="9.229"
                     viewBox="0 0 9.229 9.229">
@@ -29,6 +30,7 @@
                         transform="translate(-1.44 -1.44)" fill="#849597" /></svg>
                 <span class="search-text">Rechercher</span></div>
         </div>
+        <!-- menu avec les îcones -->
         <nav class="nav-icon">
             <a href="../index.php"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 48 48"
                     fill="#262626">
@@ -62,11 +64,13 @@
             <a href="../profil/profil.html"><img class="pp-container" src="../img/pp2.jpg" alt=""></a>
         </nav>
     </header>
-
+    <!-- code de la page principale -->
     <main>
+        <!-- div qui centre les éléments -->
         <div class="container" style="margin-top:54px;padding-top:30px">
+            <!-- div qui contient le formulaire -->
             <div class="form-container">
-
+                <!-- en-tête du formulaire -->
                 <header class="form-header">
                     <h1 class="form-title">Direct</h1>
                     <svg class="icon-write" fill="#262626" height="24" width="24" viewbox="0 0 44 44">
@@ -81,6 +85,7 @@
                         </path>
                     </svg>
                 </header>
+                <!-- corps du formulaire -->
                 <div class="form-main">
                     <form action="../assets/form.php" method="GET">
 
@@ -98,7 +103,7 @@
                         <textarea name="comment" id="comment" class="form-input form-textarea" cols="50" rows="100"
                             placeholder="Ajouter un commentaire ..."></textarea>
 
-
+                        <!-- bouton envoyer -->
                         <button class="form-button"><svg fill="#262626" xmlns="http://www.w3.org/2000/svg" width="34"
                                 height="34" viewBox="0 0 48 48">
                                 <path
