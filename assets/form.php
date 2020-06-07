@@ -10,7 +10,7 @@ $sql = "INSERT INTO contact (nom, mail, objet, comment) VALUES (?, ?, ?, ?)";
 
     $db = null;
 
-    header('Location: ../contact/contact.html');
+    header('Location: ../contact/contact.php?success=true');
   } else {
     http_response_code(500);
   }

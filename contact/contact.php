@@ -11,6 +11,15 @@
 </head>
 
 <body>
+
+    <?php 
+    
+    if(isset($_GET['success'])) {
+        echo('<script>alert("Message envoyé !")</script>');
+    }
+    
+    ?>
+
     <header class="header">
         <div class="search-bar">
             <div class="search-content"><svg xmlns="http://www.w3.org/2000/svg" width="9.229" height="9.229"

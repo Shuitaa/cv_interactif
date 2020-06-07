@@ -12,7 +12,9 @@
 </head>
 
 <body>
+    <!-- en-tête -->
     <header class="header">
+        <!-- bar de recherche -->
         <div class="search-bar">
             <div class="search-content"><svg xmlns="http://www.w3.org/2000/svg" width="9.229" height="9.229"
                     viewBox="0 0 9.229 9.229">
@@ -21,6 +23,7 @@
                         transform="translate(-1.44 -1.44)" fill="#849597" /></svg>
                 <span class="search-text">Rechercher</span></div>
         </div>
+        <!-- menu avec les îcones -->
         <nav class="nav-icon">
             <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 48 48"
                     fill="#262626">
@@ -30,7 +33,7 @@
                 </svg>
             </a>
 
-            <a href="contact/contact.html"><svg fill="#262626" style="position:relative;top:2px"
+            <a href="contact/contact.php"><svg fill="#262626" style="position:relative;top:2px"
                     xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 48 48">
                     <path
                         d="M47.8 3.8c-.3-.5-.8-.8-1.3-.8h-45C.9 3.1.3 3.5.1 4S0 5.2.4 5.7l15.9 15.6 5.5 22.6c.1.6.6 1 1.2 1.1h.2c.5 0 1-.3 1.3-.7l23.2-39c.4-.4.4-1 .1-1.5zM5.2 6.1h35.5L18 18.7 5.2 6.1zm18.7 33.6l-4.4-18.4L42.4 8.6 23.9 39.7z">
@@ -54,12 +57,13 @@
             <a href="profil/profil.html"><img class="pp-container" src="img/pp2.jpg" alt=""></a>
         </nav>
     </header>
+    <!-- code de la page principale -->
     <main>
-
+        <!-- div qui centre les éléments -->
         <div class="container">
-
+            <!-- section qui contient tous le code de mes centres d'interêts -->
             <section class="section-container">
-
+                <!-- en-tête de mes centres d'interêts -->
                 <header>
                     <a href="profil/profil.html"><img src="img/pp2.jpg" alt="" class="pp-container2"></a>
                     <div class="name-job-container">
@@ -67,9 +71,11 @@
                         <h2 class="job">Chef de projet</h2>
                     </div>
                 </header>
+                <!-- texte-centres d'interêts -->
                 <div>
                     <h2 class="interest-title">Centre d'intêrets</h2>
                 </div>
+                <!-- div qui contient mes centres d'interêts -->
                 <div class="interest-container">
                     <div><img src="img/arts-pp.png" alt="" class="interest-pp">
                         <div class="interest-content"><span class="name interest">arts</span>
@@ -92,13 +98,12 @@
                             <span class="interest-subtitle">Vinland_Saga,hunterXhunter</span></div>
                     </div>
                 </div>
-
-
             </section>
 
+            <!-- div qui contient mes compétences -->
             <div class="skill-container">
 
-
+                <!-- bouton suivant du slider -->
                 <div class="button-next">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.999"
                         height="43" viewBox="0 0 42.999 43">
@@ -121,6 +126,7 @@
 
 
                 </div>
+                <!-- bouton précedent du slider -->
                 <div class="button-previous">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42.999"
                         height="43" viewBox="0 0 42.999 43">
@@ -144,7 +150,7 @@
                 </div>
 
 
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="xd" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -154,7 +160,7 @@
                     <span class="skill-name">adobe_xd</span>
                 </div>
 
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="photoshop" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -164,7 +170,7 @@
                     <span class="skill-name">photoshop</span>
                 </div>
 
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="indesign" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -184,7 +190,7 @@
                     <span class="skill-name">illustrator</span>
                 </div>
 
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="premiere" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -193,7 +199,7 @@
                     <img src="img/pr-pp.png" alt="" class="skill-pp">
                     <span class="skill-name">premiere_pro</span>
                 </div class="skill-content">
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="html" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -202,7 +208,7 @@
                     <img src="img/html-pp.png" alt="" class="skill-pp">
                     <span class="skill-name">html</span>
                 </div>
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="css" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -211,7 +217,7 @@
                     <img src="img/css-pp.png" alt="" class="skill-pp">
                     <span class="skill-name">css</span>
                 </div>
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="jquery" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -220,7 +226,7 @@
                     <img src="img/js-pp.png" alt="" class="skill-pp">
                     <span class="skill-name">js_jquery</span>
                 </div>
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="php" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -229,7 +235,7 @@
                     <img src="img/php-pp.png" alt="" class="skill-pp">
                     <span class="skill-name">php</span>
                 </div>
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="sql" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -238,7 +244,7 @@
                     <img src="img/sql-pp.png" alt="" class="skill-pp">
                     <span class="skill-name">sql</span>
                 </div>
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="anglais" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -247,7 +253,7 @@
                     <img src="img/an-pp.png" alt="" class="skill-pp">
                     <span class="skill-name">anglais</span>
                 </div>
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="espagnol" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -256,7 +262,7 @@
                     <img src="img/esp-pp.png" alt="" class="skill-pp">
                     <span class="skill-name">espagnol</span>
                 </div>
-
+                <!-- div qui contient une compétence -->
                 <div class="skill-content">
                     <svg class="skill">
                         <circle id="chinois" class="circle-skill" cx="29" cy="29" r="29"></circle>
@@ -268,20 +274,20 @@
 
             </div>
 
-            <?php
-            $getip = $_SERVER['REMOTE_ADDR'];
-            $stmt = $db -> prepare('SELECT *  FROM article');
+            <?php //code php début
+            $getip = $_SERVER['REMOTE_ADDR']; // je récupère l'adresse IP de l'utilsateur
+            $stmt = $db -> prepare('SELECT *  FROM article'); //requête SQL pour récupérer les champs utiles pour mes experiences
             $stmt -> execute();
 
             while ($data = $stmt -> fetch()){
-                $likes_index = $db -> prepare('SELECT * FROM likes WHERE id_article = ?');
+                $likes_index = $db -> prepare('SELECT * FROM likes WHERE id_article = ?'); //récupération du nombre de like par article au démarrage de la page
                 $likes_index -> execute(array($data['id']));
                 $likes_index = $likes_index -> rowCount();
 
-                $likes_check = $db -> prepare('SELECT id FROM likes WHERE id_article = ? AND ip_utilisateur = ?');
+                $likes_check = $db -> prepare('SELECT id FROM likes WHERE id_article = ? AND ip_utilisateur = ?'); //vérification de l'article, voir si il a été like ou non
                 $likes_check -> execute(array($data['id'],$getip));
-                
-                echo('<article class="experience-container">
+                //affichage de mes experiences
+                echo('<article class="experience-container"> 
                     <header class="experience-header"><img src="img/pp-'.$data['id'].'.jpg" alt="" class="experience-pp">
                         <div class="experience-header-content"><span class="experience-name">'.$data['entreprise_nom'].'</span><svg
                                 xmlns="http://www.w3.org/2000/svg" width="23" height="5" viewBox="0 0 17 5"
@@ -300,7 +306,7 @@
                     <footer class="experience-footer">
                         <div class="experience-icon-container">
                             <span><button id="'.$data['id'].'" class="experience-icon">');
-                            if ($likes_check->rowCount() == 1 ){
+                            if ($likes_check->rowCount() == 1 ){ //vérification de l'article, voir si il a été like ou non
                                     echo('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#ed4956" d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>');
                                 } elseif ($likes_check->rowCount() == 0) { 
                                     echo ('<svg fill="#262626" id="heart-'.$data['id'].'" xmlns="http://www.w3.org/2000/svg" width="24"height="24" viewBox="0 0 48 48"><path d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>');
