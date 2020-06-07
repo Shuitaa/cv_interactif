@@ -585,7 +585,7 @@ h2 {
 .info-me-text {
     position: absolute;
     top: 220px;
-    left: 38.9vw;
+    left: 38.9%;
     width: 600px;
     display: block;
 }
