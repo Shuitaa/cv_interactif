@@ -1,5 +1,5 @@
 <?php
-$db = new PDO ('mysql:host=sqletud.u-pem.fr;dbname=paverty_db', 'paverty', 'DinoLacambra', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));  // Appelle de la base de données
+include('secret.php');  // Appelle de la base de données
 $id_article = htmlspecialchars($_GET['id']);
 
 if (isset($_GET['id']) AND !empty($_GET['id'])) { //On vérifie si la variable $_GET['id'] existe et si elle n'est pas vide

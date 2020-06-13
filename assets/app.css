@@ -36,6 +36,7 @@
 *::after {
     box-sizing: border-box;
 }
+
 /* on retire le contour noir des boutons au clic */
 Button:focus,
 .form-input:focus {
@@ -56,6 +57,7 @@ main {
     width: 100vw;
 
 }
+
 /* en-tête */
 .header {
     position: fixed;
@@ -111,6 +113,7 @@ main {
     left: 63.1822916667%;
     top: 13px;
 }
+
 /* --------------------------------------- */
 .container {
     display: flex;
@@ -118,6 +121,7 @@ main {
 
     flex-direction: column;
 }
+
 /* compétences */
 .skill-container {
     display: flex;
@@ -157,6 +161,7 @@ main {
     stroke-linecap: round;
     transform: translate(1.25px, 1.25px);
 }
+
 /* animation des cercles */
 .circle-anim-xd {
     stroke-dasharray: 182px;
@@ -222,6 +227,7 @@ main {
     stroke-dasharray: 182px;
     stroke-dashoffset: calc(182 - (182 * 40) / 100);
 }
+
 /* -------------------------------------------- */
 .skill-pp {
     display: block;
@@ -264,6 +270,7 @@ main {
     z-index: 100;
     cursor: pointer;
 }
+
 /* ------------------------------- */
 /* experience */
 .experience-container {
@@ -282,6 +289,7 @@ main {
     top: -5px;
     border-radius: 0 0 3px 3px;
 }
+
 /* ajout des bordure et du background blanc */
 .skill-container,
 .experience-header,
@@ -293,6 +301,7 @@ main {
     width: 614px;
     background-color: white;
 }
+
 /* ------------------------------- */
 .experience-img {
     height: 614px;
@@ -403,6 +412,7 @@ main {
     display: inline;
     font-family: 'Segoe UI Regular Bold', sans-serif;
 }
+
 /* ---------------------------- */
 /* centre d'interêts */
 .section-container {
@@ -490,6 +500,7 @@ h2 {
     margin-top: 2px;
     font-size: 12px;
 }
+
 /* ---------------------------------- */
 /* PAGE FORMULAIRE */
 .form-container {
@@ -560,6 +571,7 @@ h2 {
     cursor: pointer;
     margin-left: 480px;
 }
+
 /* ----------------------------- */
 /* PAGE PROFIL */
 .header-profil {
@@ -604,6 +616,7 @@ h2 {
     list-style: none;
     font-size: 16px;
 }
+
 .info-me-container {
     display: flex;
     flex-wrap: wrap;
@@ -673,4 +686,5 @@ h2 {
     display: inline-block;
     width: 293px;
 }
+
 /* ---------------------------------- */

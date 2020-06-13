@@ -8,7 +8,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="assets/app.js"></script>
     <link rel="stylesheet" href="assets/app.css">
-    <?php $db = new PDO ('mysql:host=sqletud.u-pem.fr;dbname=paverty_db', 'paverty', 'DinoLacambra', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));?>
+    <?php include('assets/secret.php');?>
 </head>
 
 <body>
@@ -302,7 +302,7 @@
                                 </g>
                             </svg></div>
                     </header>
-                    <img class="experience-img" src="img/img-'.$data['id'].'.jpg" alt="">
+                    <a href="'.$data['experience_link'].'"><img class="experience-img" src="img/img-'.$data['id'].'.jpg" alt=""></a>
                     <footer class="experience-footer">
                         <div class="experience-icon-container">
                             <span><button id="'.$data['id'].'" class="experience-icon">');
